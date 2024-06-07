@@ -14,6 +14,8 @@ use yii\web\Response;
  */
 class SiteController extends Controller
 {
+
+    public $defaultAction='dashboard';
     /**
      * {@inheritdoc}
      */
@@ -28,7 +30,7 @@ class SiteController extends Controller
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['logout', 'index'],
+                        'actions' => ['logout', 'index', 'dashboard'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -65,6 +67,16 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+     /**
+     * Displays homepage.
+     *
+     * @return string
+     */
+    public function actionDashboard()
+    {
+        return $this->render('dashboard');
+    }
+
     /**
      * Login action.
      *
@@ -76,7 +88,7 @@ class SiteController extends Controller
             return $this->goHome();
         }
 
-        $this->layout = 'blank';
+        $this->layout = 'main-login';
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
