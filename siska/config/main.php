@@ -47,4 +47,8 @@ return [
         */
     ],
     'params' => $params,
+
+    // setting bahasa dan zona waktu
+    'language' => 'id-ID',
+    'timeZone' => 'Asia/Jakarta'
 ];
