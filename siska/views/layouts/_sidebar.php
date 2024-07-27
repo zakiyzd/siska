@@ -47,8 +47,8 @@
                         'label' => 'Data Master',
                         'icon' => 'database',
                         'items' => [
-                            ['label' => "Agama", 'icon' => 'mosque', 'url' => ['/']],
-                            ['label' => "Wilayah", 'icon' => 'globe-asia', 'url' => ['/']],
+                            ['label' => "Agama", 'icon' => 'mosque', 'url' => ['/agama']],
+                            ['label' => "Wilayah", 'icon' => 'globe-asia', 'url' => ['/wilayah']],
 
                         ]
                         ],
@@ -65,10 +65,10 @@
                             ['label' => 'Mahasiswa', 'icon' => 'user-graduate', 'url' => ['/']],
                             ['label' => 'Staff', 'icon' => 'user', 'url' => ['/']],
                             ['label' => 'Mata Kuliah', 'icon' => 'book', 'url' => ['/']],
-                            ['label' => 'Status Dosen', 'icon' => 'chalkboard-teacher', 'url' => ['/']],
+                            ['label' => 'Status Dosen', 'icon' => 'chalkboard-teacher', 'url' => ['/status-dosen']],
                             ['label' => 'Jabatan Struktural', 'icon' => 'map-pin', 'url' => ['/']],
-                            ['label' => 'Jenjang Pendidikan', 'icon' => 'layer-group', 'url' => ['/']],
-                            ['label' => 'Universitas', 'icon' => 'school', 'url' => ['/']],
+                            ['label' => 'Jenjang Pendidikan', 'icon' => 'layer-group', 'url' => ['/jenjang-pendidikan']],
+                            ['label' => 'Universitas', 'icon' => 'school', 'url' => ['/universitas']],
 
                         ]
                         ],
