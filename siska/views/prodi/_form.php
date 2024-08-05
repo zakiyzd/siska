@@ -1,7 +1,11 @@
 <?php
 
 use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use kartik\form\ActiveForm;
+use kartik\select2\Select2;
+
+// model
+use siska\models\Fakultas;
 
 /** @var yii\web\View $this */
 /** @var siska\models\Prodi $model */
@@ -16,10 +20,16 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'nama_prodi')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'fakultas_id')->textInput() ?>
+    <?= $form->field($model, 'fakultas_id')->widget(Select2::class,[
+        'data' => Fakultas::dropdown(),
+        'options' => ['placeholder'=>'Pilih Fakultas...'],
+        'pluginOptions' => [
+            'allowclear' => true,
+        ]
+    ]) ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Simpan', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
