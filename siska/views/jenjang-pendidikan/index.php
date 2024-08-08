@@ -10,7 +10,7 @@ use yii\widgets\Pjax;
 /** @var siska\models\JenjangPendidikanSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
-$this->title = 'Jenjang Pendidikans';
+$this->title = 'Jenjang Pendidikan';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="jenjang-pendidikan-index">
@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Jenjang Pendidikan', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Tambah Jenjang Pendidikan', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(); ?>
