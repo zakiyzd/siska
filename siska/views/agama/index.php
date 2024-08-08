@@ -10,7 +10,7 @@ use yii\widgets\Pjax;
 /** @var siska\models\AgamaSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
-$this->title = 'Agamas';
+$this->title = 'Agama';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="agama-index">
@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Agama', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Tambah Agama', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(); ?>
